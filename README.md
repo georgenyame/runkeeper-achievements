@@ -14,28 +14,17 @@ AchievementsScreen ── observes ──> AchievementsViewModel ── depends 
                                                                      MockNetworkService (fixture-backed)
 ```
 
-## Network layer
+## Environment
 
-`NetworkService` is a small protocol (`fetchAchievements() async throws -> [Achievement]`), so the view model is testable and unaware of the concrete data source. `MockNetworkService` implements it against bundled JSON fixtures, with an injectable `Scenario` (`success`, `empty`, `error`, `slow`) to exercise every `ViewState` on demand — see `ScenarioDemoView`, reachable from Profile's Debug section in debug builds.
+- Xcode 26.6 (17F113)
+- macOS 26.5.2
+- iOS 26.5 deployment target
 
-## Idealized response shape
+## Running
 
-Achievement categories are **server-driven**, not client-hardcoded:
+1. Open `Runkeeper_achievements.xcodeproj` in Xcode.
+2. Select the `Runkeeper_achievements` scheme and any iOS 26.5+ simulator.
+3. Build & run (`Cmd+R`).
+4. From the Profile screen, tap **Achievements**, or expand the **Debug** section to open **Scenario Demo** and pick a `MockNetworkService` scenario (success, empty, error, slow) to exercise any `ViewState`.
 
-```json
-{
-  "id": "personalRecord",
-  "displayName": "Personal Records",
-  "sortOrder": 0
-}
-```
-
-The backend owns the category's display name and sort order, so adding, renaming, or reordering categories is purely a backend change — no client release required, and no client-side switch statement mapping category ids to display strings. `displayName`/`sortOrder` are required fields: a category missing either fails decoding loudly rather than silently guessing, since that would be a backend contract violation.
-
-## Styling
-
-`Styles/Colors`, `Styles/Fonts`, and `Styles/Spacing` define theme tokens (`primaryColor`, `secondaryFont`, `spacingOne`, etc.) matching the provided mock, used throughout the view layer instead of magic numbers/hex values.
-
-## Tests
-
-`AchievementsViewModelTests` covers every `MockNetworkService.Scenario`, category grouping/ordering, and the decoding contract for `AchievementCategory`.
+To run tests: `Cmd+U`, or `xcodebuild -scheme Runkeeper_achievements -destination 'platform=iOS Simulator,name=<simulator>' test`.
