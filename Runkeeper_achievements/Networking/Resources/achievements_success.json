@@ -1,0 +1,18 @@
+{
+  "achievements": [
+    { "id": "longest_run", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Longest Run", "subtitle": "00:00", "imageName": "longest_run", "isEarned": true },
+    { "id": "highest_elevation", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Highest Elevation", "subtitle": "2098 ft", "imageName": "highest_elevation", "isEarned": true },
+    { "id": "fastest_5k", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Fastest 5K", "subtitle": "00:00", "imageName": "fastest_5k", "isEarned": true },
+    { "id": "fastest_10k", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "10K", "subtitle": "00:00:00", "imageName": "fastest_10k", "isEarned": true },
+    { "id": "fastest_half_marathon", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Half Marathon", "subtitle": "00:00", "imageName": "fastest_half_marathon", "isEarned": true },
+    { "id": "fastest_marathon", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Marathon", "subtitle": "Not Yet", "imageName": "fastest_marathon", "isEarned": false },
+
+    { "id": "virtual_half_marathon_race", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Virtual Half Marathon Race", "subtitle": "00:00", "imageName": "virtual_half_marathon_race", "isEarned": true },
+    { "id": "tokyo_hakone_ekiden_2020", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Tokyo-Hakone Ekiden 2020", "subtitle": "00:00:00", "imageName": "tokyo-hakone-ekiden-2020", "isEarned": true },
+    { "id": "virtual_10k_race", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Virtual 10K Race", "subtitle": "00:00:00", "imageName": "virtual_10k_race", "isEarned": true },
+    { "id": "hakone_ekiden", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Hakone Ekiden", "subtitle": "00:00:00", "imageName": "hakone_ekiden", "isEarned": true },
+    { "id": "mizuno_singapore_ekiden_2015", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Mizuno Singapore Ekiden 2015", "subtitle": "00:00:00", "imageName": "mizuno_singapore_ekiden", "isEarned": true },
+    { "id": "virtual_5k_race", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Virtual 5K Race", "subtitle": "23:07", "imageName": "virtual_5k_race", "isEarned": true },
+    { "id": "virtual_marathon_race", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Virtual Marathon Race", "subtitle": "00:00:00", "imageName": "virtual_marathon_race", "isEarned": true }
+  ]
+}

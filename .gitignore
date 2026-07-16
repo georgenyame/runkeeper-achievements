@@ -1,0 +1,19 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Obj-C/Swift specific
+*.hmap
+
+# CocoaPods / Carthage (not used, kept for safety)
+Pods/
+Carthage/Build/

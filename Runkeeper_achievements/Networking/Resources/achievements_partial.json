@@ -1,0 +1,10 @@
+{
+  "achievements": [
+    { "id": "longest_run", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Longest Run", "subtitle": "00:00", "imageName": "longest_run", "isEarned": true },
+    { "id": "fastest_marathon", "category": { "id": "personalRecord", "displayName": "Personal Records", "sortOrder": 0 }, "title": "Marathon", "subtitle": "Not Yet", "imageName": "fastest_marathon", "isEarned": false },
+
+    { "id": "virtual_5k_race", "category": { "id": "virtualRace", "displayName": "Virtual Races", "sortOrder": 1 }, "title": "Virtual 5K Race", "subtitle": "23:07", "imageName": "virtual_5k_race", "isEarned": true },
+
+    { "id": "winter_challenge_2026", "category": { "id": "seasonalChallenge", "displayName": "Seasonal Challenges", "sortOrder": 2 }, "title": "Winter Challenge", "subtitle": "00:00:00", "imageName": "longest_run", "isEarned": true }
+  ]
+}
